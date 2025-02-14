@@ -2,7 +2,7 @@ onload = () => {
   const c = setTimeout(() => {
     document.body.classList.remove("not-loaded");
 
-    const titles = ('HAPPY VALENTINES DAY from Sean').split('')
+    const titles = ('HAPPY VALENTINES DAY from Sean.').split('')
     const titleElement = document.getElementById('title');
     let index = 0;
 
@@ -10,7 +10,7 @@ onload = () => {
       if (index < titles.length) {
         titleElement.innerHTML += titles[index];
         index++;
-        setTimeout(appendTitle, 300); 
+        setTimeout(appendTitle, 100); 
       }
     }
 
